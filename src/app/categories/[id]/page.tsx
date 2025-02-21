@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { useParams } from "next/navigation";
 import type { Post } from "@/app/_types/Post";
 import type { PostApiResponse } from "@/app/_types/PostApiResponse";
 import PostSummary from "@/app/_components/PostSummary";
@@ -10,6 +11,8 @@ import Link from "next/link";
 const Page: React.FC = () => {
   const [posts, setPosts] = useState<Post[] | null>(null);
   const [fetchError, setFetchError] = useState<string | null>(null);
+  const { id } = useParams() as { id: string };
+  const categoryPosts = [];
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -63,16 +66,24 @@ const Page: React.FC = () => {
     );
   }
 
+  for (const post of posts) {
+    for (const category of post.categories) {
+      if (category.id == id) {
+        categoryPosts.push(post);
+      }
+    }
+  }
+
   return (
     <main>
-      <div className="text-2xl font-bold">参加シナリオ一覧</div>
+      <div className="text-2xl font-bold">カテゴリの記事一覧</div>
       <div className="mb-1 flex justify-end">
         <Link href="/admin" className="text-blue-500 underline">
           管理者機能
         </Link>
       </div>
       <div className="space-y-3">
-        {posts.map((post) => (
+        {categoryPosts.map((post) => (
           <PostSummary key={post.id} post={post} />
         ))}
       </div>
