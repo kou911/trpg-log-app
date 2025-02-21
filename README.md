@@ -10,10 +10,9 @@
 
 - ラベルごとに絞り込んで類似の投稿のみを表示可能。
 - 一覧では本文が秘匿されるためネタバレを気にする必要がない。
-- [!['使用例']](https://youtu.be/ZfhquCWNiJQ)
+https://github.com/user-attachments/assets/7a4baa4d-b579-468b-86a2-3f7da8188288
 - 開発者(投稿者)の画面では、一度投稿した内容を変更することが可能。また、ラベルはチェックボックス方式であり直感的にラベル付けが可能。
-- [!['使用例']](https://youtu.be/_d0-kcR78WE)
-
+https://github.com/user-attachments/assets/51129aa9-d9ac-4ed4-86fa-81fcfe171e92
 ## 使用技術 (技術スタック)
 
 - 使用した言語やフレームワーク
