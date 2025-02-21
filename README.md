@@ -10,13 +10,9 @@
 
 - ラベルごとに絞り込んで類似の投稿のみを表示可能。
 - 一覧では本文が秘匿されるためネタバレを気にする必要がない。
-<div>
-<iframe width="600" height="400" src="https://youtu.be/ZfhquCWNiJQ"></iframe>
-</div>
+- [!['使用例']]('https://youtu.be/ZfhquCWNiJQ')
 - 開発者(投稿者)の画面では、一度投稿した内容を変更することが可能。また、ラベルはチェックボックス方式であり直感的にラベル付けが可能。
-<div>
-<iframe width="600" height="400" src="https://youtu.be/_d0-kcR78WE"></iframe>
-</div>
+- [!['使用例']]('https://youtu.be/_d0-kcR78WE')
 
 ## 使用技術 (技術スタック)
 
